@@ -11,6 +11,10 @@ run:
 	npm install
 	react-native run-android
 	
+link to download apk app
+http://www.upfile.co.il/file/494265275.html
+
+
 preview:
 
 
