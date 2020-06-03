@@ -12,4 +12,6 @@ run:
 	react-native run-android
 	
 preview:
+
+
 ![](app_gif.gif)
