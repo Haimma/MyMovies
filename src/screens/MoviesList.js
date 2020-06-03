@@ -5,7 +5,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { FlatList, View, Text } from "react-native";
 import MovieListItem from "./MovieListItem";
-import {styles} from './MovieListStyles';
 
 class MovieList extends Component {
 
@@ -15,8 +14,6 @@ class MovieList extends Component {
 
   render() {
     const movies = this.props.moviesLists.all;
-    console.log('movies')
-    console.log(movies)
     return (
       <View>
         <FlatList

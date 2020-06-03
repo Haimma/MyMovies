@@ -60,19 +60,15 @@ signIn = async () => {
     } catch (error) {
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {
         // user cancelled the login flow
-        console.log('SIGN_IN_CANCELLED');
         console.log(error);
       } else if (error.code === statusCodes.IN_PROGRESS) {
         // operation (e.g. sign in) is in progress already
-        console.log('IN_PROGRESS');
         console.log(error);
       } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
         // play services not available or outdated
-        console.log('PLAY_SERVICES_NOT_AVAILABLE');
         console.log(error);
       } else {
         // some other error happened
-        console.log('other error happened');
         console.log(error);
       }
     }
@@ -157,7 +153,6 @@ render() {
                                     .catch(() => {
                                         console.log('ERROR GETTING DATA FROM FACEBOOK');
                                     })
-                                    console.log(data.accessToken.toString());
                                 }
                             )
                         }
